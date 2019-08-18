@@ -1,0 +1,75 @@
+{{#partial "page"}}
+
+{{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+
+<main class="page">
+
+    <h1 class="page-heading">{{page.title}}</h1>
+
+    {{#if page.sub_pages}}
+        <nav class="navBar navBar--sub">
+        <ul class="navBar-section account-navigation">
+        {{#each page.sub_pages}}
+        <li class="navBar-item"><a class="navBar-action" href="{{url}}">{{title}}</a></li>
+        {{/each}}
+        </ul>
+        </nav>
+    {{/if}}
+<div class="col-sm-6">
+    <div class="page-content">
+            <p>{{{page.content}}}</p>
+    </div>
+</div>
+<div class="col-sm-6">
+<div class="page-content">
+    <h3>Customer Service:</h3>
+<p><a href="tel:18775597516">877-559-7516</a></p>
+    <h3>Trade Program Inquiries</h3>
+<p><a href="tel:18775597516">877-559-7516</a> option 2 Interior Designers, Architects, Builders, Developers, and Contractors click here</p>
+<h3>Shipping &amp; Returns</h3>
+<p><a href="tel:18775597516">877-559-7516</a> More information on <a href="https://lightopia7.mybigcommerce.com/shipping-returns/">Shipping and Returns</a> here</p>
+<h3>Management</h3>
+<p>For press, media, event, and customer contact please contact Ken Vick<br /> <a href="tel:13105983654">310-598-3654</a><br /> <a href="mailto:kvick@lightopiaonline.com">kvick@lightopiaonline.com</a></p>
+
+    </div>
+</div>
+<!--<div class="col-sm-3">
+    <div class="commontext">
+
+	<p>Lightopia Costa Mesa at SoCo<br>
+    Phone: <a href="tel:19497155575">949-715-5575</a><br>
+    3323 Hyland Avenue, Suite E2<br>
+	Costa Mesa, CA 92626<br>
+	<a href="https://goo.gl/maps/wMpuoT6E6vt]" target="_self">Directions</a></p>
+	<p>Lightopia Manhattan Beach<br> 
+    Phone: <a href="tel:13109972377">310-997-2377</a><br>
+	2001A N. Sepulveda Blvd.
+<br>Manhattan Beach, CA 90266<br><a href="http://maps.google.com/maps?oi=map&amp;q=2001A North Sepulveda Boulevard+Manhattan Beach+CA+90266" target="_self">Directions</a><br>
+
+<br>
+<br>
+	Toll-Free: <a href="tel:18775597516">877-559-7516</a><br>
+	Fax: 949-715-5577</p>
+	</div>
+</div>-->
+<!--- Original Contact Layout --->
+<div class="col-sm-8">
+    <div class="page-content">
+        {{#if forms.contact.success}}
+            {{{lang 'forms.contact_us.successful' shopPath=urls.home}}}
+        {{else}}
+            <!--<p>{{{page.content}}}</p>-->
+            {{> components/page/contact-us-form}}
+        {{/if}}
+        <!--<p>{{{page.content}}}</p>-->
+
+    </div>
+</div>
+<div class="col-sm-3"></diV>
+
+
+</main>
+
+{{/partial}}
+
+{{> layout/base}}

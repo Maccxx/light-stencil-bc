@@ -1,0 +1,120 @@
+---
+products:
+    new:
+        limit: {{theme_settings.homepage_new_products_count}}
+    featured:
+        limit: {{theme_settings.homepage_featured_products_count}}
+    top_sellers:
+        limit: {{theme_settings.homepage_top_products_count}}
+carousel: {{theme_settings.homepage_show_carousel}}
+blog:
+    recent_posts:
+        limit: {{theme_settings.homepage_blog_posts_count}}
+---
+{{#partial "hero"}}
+    {{!-- {{#if carousel}}
+        {{> components/carousel}}
+    {{/if}} --}}
+    {{> components/common/hero}}
+    {{> components/common/ctas}}
+   {{!-- {{> components/common/banner1}} --}}
+
+    {{{snippet 'home_content'}}}
+{{/partial}}
+
+{{#partial "page"}}
+
+    {{#each shipping_messages}}
+        {{> components/common/alert-info message}}
+    {{/each}}
+
+<!--<div class="main full">
+    {{#if products.featured}}
+        {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
+    {{/if}}
+
+     {{#if products.top_sellers}}
+        {{> components/products/top products=products.top_sellers columns=theme_settings.homepage_top_products_column_count}}
+    {{/if}}
+
+    {{#if products.new}}
+        {{> components/products/new products=products.new columns=theme_settings.homepage_new_products_column_count}}
+    {{/if}}
+</div>-->
+
+
+<div class="brandlink text-center">
+    
+    <img src="https://cdn11.bigcommerce.com/s-b03g7jlut8/product_images/uploaded_images/hinkley-front-banner-7-2017.jpg?t=1556907617"/>
+    
+</div>
+
+<div class="tradeprogram">
+    
+<div class="">
+    <div class="flex-wrap">
+         <div class="tradesectionone">
+            <p>Make your next project a success with Lightopia's FOR THE TRADE program, offering exclusive benefits and services! Let us help you become a Lighting Designer fluent in the world of Architectural LED lighting as well as access to exclusive Decorative lighting designers.</p>
+
+            <p>We have extensive Architectural Lighting Design experience and ideas for you to create the most prolific residential and commercial projects. The science of LED lighting has emerged from a wild west product to one with excellent color-rendition, light output, and color temperature. Contact us today!</p>
+        </div>
+        <div class="tradesectiontwo">
+          <img src="https://cdn11.bigcommerce.com/s-b03g7jlut8/product_images/uploaded_images/trade-program-banner.jpg?t=1556908260">
+        </div>
+
+    </div>
+</div>   
+
+ <div class="">
+    <div class="flex-wrap">
+         <div class="tradesection">
+             Trade Benefits:<br>
+             
+            <ul>
+                <li>Trade Pricing and Volume Discounting</li>
+                <li style="color: #e58d35;">Full access to Trade Website portal: - Shop and purchase online at exclusive trade pricing!</li>
+                <li>7 Day Tech and Customer Support</li>
+                <li>Eco-Home Energy Calculations and Review</li>
+                <li>Free fabric/finish swatches</li>
+                <li>Free Shipping on ALL products</li>
+                <li>Customized Specification sheets</li>
+                <li>New Product&amp;  Designer Spotlight Newsletter</li>
+                <li>Lighting Design Blog discussing topical events and trends</li>
+            </ul>
+        </div>
+        <div class="tradesection">
+          <div style=" width: 445px;"></div>
+        </div>
+
+    </div>
+</div>   
+
+<div class="">
+    <h3>#MyLightopia</h3>
+    <iframe src="https://snapwidget.com/embed/674136" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:160px"></iframe>
+</div>
+   
+ <div class="">
+    <div class="flex-wrap">
+         <div class="tradesection">
+ <div style=" width: 745px;"></div>
+        </div>
+        <div class="tradesection">
+         
+          <img src="https://cdn11.bigcommerce.com/s-b03g7jlut8/product_images/uploaded_images/talk.png?t=1553789549"/>
+          
+        </div>
+
+    </div>
+</div>      
+   
+   
+    
+    
+</div>
+
+
+{{!--  {{> components/common/banner2}} --}}
+{{/partial}}
+
+{{> layout/base}}

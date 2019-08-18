@@ -1,0 +1,22 @@
+<nav class="container">
+    <div class="flex-parent-5">
+<a href="#" class="mobileMenu-toggle" data-mobile-menu-toggle="menu">
+        <span class="mobileMenu-toggleIcon">Toggle menu</span>
+    </a><!-- Left Column -->
+    <div class="flex-item-2">{{> components/common/store-logo}}</div>
+      <div class="flex-item-3">
+            <span class="cart-item">
+            <a
+            class="navUser-action"
+            data-cart-preview
+            data-dropdown="cart-preview-dropdown"
+            data-options="align:right"
+            href="{{urls.cart}}">
+            <span class="navUser-item-cartLabel"><!--<i class="fa fa-shopping-cart"></i>-->
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+            <span class="countPill{{#if cart.items}} countPill--positive{{/if}} cart-quantity">{{cart.quantity}}</span>
+            </a>
+        </span></div>
+    </div>
+    </div>
+</nav>

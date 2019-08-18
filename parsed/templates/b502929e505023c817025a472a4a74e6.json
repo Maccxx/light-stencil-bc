@@ -1,0 +1,1 @@
+{"components/common/hero":"<div class=\"hero-wrap\">\n\t{{!--\n\t<img src=\"{{cdn 'img/lightopia-photos/hero.png'}}\" alt=\"\"> --}}\n\t<h1>modern designer lighting</h1>\n\t<a>shop now</a>\n</div>\n"}

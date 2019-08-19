@@ -16,7 +16,7 @@
 <!-- End of lightopiaonline Zendesk Widget script -->
 
         <script src="{{cdn 'assets/modernizr-custom.js'}}"></script>
-        
+
         
         {{#if category}}
             <script src="//cdn.searchspring.net/search/v3/js/searchspring.catalog.js?suxvc8" category="{{#each breadcrumbs}}{{#unless @first}}{{name}}{{#unless @last}}>{{/unless}}{{/unless}}{{/each}}" name="{{ category.name }}"></script>
@@ -25,8 +25,7 @@
         {{else}}
             <script src="//cdn.searchspring.net/search/v3/js/searchspring.catalog.js?suxvc8"{{#if page.title "!=" 'Search Results'}} defer{{/if}}></script>
         {{/if}}
-        <!----------------- Futura Font Link ------------------------------->
-        <link rel="stylesheet" href="https://use.typekit.net/gko4yno.css"></script>
+        
         
 
         {{{head.scripts}}}
@@ -37,6 +36,7 @@
         {{inject 'maintenanceMode' settings.maintenance}}
         {{inject 'urls' urls}}
         {{{snippet 'htmlhead'}}}
+        <link rel="stylesheet" href="https://use.typekit.net/gko4yno.css">
     </head>
     <body>
         {{{snippet 'header'}}}

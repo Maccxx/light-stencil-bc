@@ -28,7 +28,46 @@ blog:
         {{> components/common/alert-info message}}
     {{/each}}
 
-<!--<div class="main full">
+<!----------------- Whats Hot CTA's ------------------>
+<div class="top-ctas">
+	<div class="container">
+		<div class="flex-wrap">
+        <div class="cta">
+        <a href="#">
+		<span>Top 10 Pendant Lights</span>
+		<img src="{{cdn 'img/Top-10-pendent.jpg'}}" alt="call to action2">
+	    </a>
+        </div>
+     <div class="cta">
+        <a href="#">
+		<span>Top 10 Chandeliers</span>
+		<img src="{{cdn 'img/Top-10-chanderlier.jpg'}}" alt="call to action2">
+	</a>
+    </div>
+    <div class="cta">
+        <a href="#">
+		<span>Top 10 Vanity Lights</span>
+		<img src="{{cdn 'img/Top-10-vanity.jpg'}}" alt="call to action2">
+	</a>
+    </div>
+    <div class="cta">
+        <a href="#">
+			<span>Top 10 Wall Lights</span>
+		<img src="{{cdn 'img/Top-10-wall.jpg'}}" alt="call to action3">
+	</a>
+    </div>
+    <div class="cta">
+        <a href="#">
+			<span>Top 10 Desk Lamps</span>
+		<img src="{{cdn 'img/Top-10-task.jpg'}}" alt="call to action4">
+	</a>
+    </div>
+	</div>
+</div>
+</div>
+<!----------------- Whats Hot CTA's ------------------>
+
+<div class="main full">
     {{#if products.featured}}
         {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
     {{/if}}
@@ -40,18 +79,18 @@ blog:
     {{#if products.new}}
         {{> components/products/new products=products.new columns=theme_settings.homepage_new_products_column_count}}
     {{/if}}
-</div>-->
-
-
-<div class="brandlink text-center">
-    
-    <img src="https://cdn11.bigcommerce.com/s-b03g7jlut8/product_images/uploaded_images/hinkley-front-banner-7-2017.jpg?t=1556907617"/>
-    
 </div>
+
+
+<!--<div class="brandlink text-center">
+    
+    <img src="/product_images/uploaded_images/banner1.jpg"/>
+    
+</div>-->
 
 <div class="tradeprogram">
     
-<div class="">
+<!--<div class="">
     <div class="flex-wrap">
          <div class="tradesectionone">
             <p>Make your next project a success with Lightopia's FOR THE TRADE program, offering exclusive benefits and services! Let us help you become a Lighting Designer fluent in the world of Architectural LED lighting as well as access to exclusive Decorative lighting designers.</p>
@@ -63,9 +102,10 @@ blog:
         </div>
 
     </div>
-</div>   
+</div>   -->
 
- <div class="">
+<div class="brandlink text-center"><a href="/for-the-trade/"><img src="https://cdn11.bigcommerce.com/s-b03g7jlut8/product_images/uploaded_images/trade-program-banner.jpg?t=1556908260"></a></div>
+<!-- <div class="">
     <div class="flex-wrap">
          <div class="tradesection">
              Trade Benefits:<br>
@@ -87,7 +127,7 @@ blog:
         </div>
 
     </div>
-</div>   
+</div>-->   
 
 <div class="">
     <h3>#MyLightopia</h3>
@@ -97,13 +137,13 @@ blog:
  <div class="">
     <div class="flex-wrap">
          <div class="tradesection">
- <div style=" width: 745px;"></div>
+ <div><a href="/sale/"><img src="https://cdn11.bigcommerce.com/s-b03g7jlut8/product_images/uploaded_images/luce-sweet-deals.jpg"/></a></div>
         </div>
-        <div class="tradesection">
+       <!-- <div class="tradesection">
          
           <img src="https://cdn11.bigcommerce.com/s-b03g7jlut8/product_images/uploaded_images/talk.png?t=1553789549"/>
           
-        </div>
+        </div>-->
 
     </div>
 </div>      
@@ -118,3 +158,12 @@ blog:
 {{/partial}}
 
 {{> layout/base}}
+
+<script type="text/javascript">
+dataLayer.push({
+'event': 'fireRemarketingTag',
+'ecomm_pagetype': 'home'
+});
+
+</script>
+

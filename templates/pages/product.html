@@ -42,3 +42,13 @@ try {
 
 {{/partial}}
 {{> layout/base}}
+
+<script type="text/javascript">
+dataLayer.push({
+'event': 'fireRemarketingTag',
+'ecomm_prodid': '{{product.id}}',
+'ecomm_pagetype': 'product',
+'ecomm_totalvalue': '{{product.price.without_tax.value}}'
+});
+</script>
+

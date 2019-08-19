@@ -6,7 +6,7 @@
     <div class="flex-item"><!-- Stacked Columns -->
 
    <div class="flex-parent-3">
-    <div class="flex-item-left"><!-- Login Icon -->
+    <div class="flex-item-right"><!-- Login Icon -->
 {{#if customer }}
 <a class="navUser-action" href="/login.php">
 <i class="fa fa-sign-out" aria-hidden="true"></i>
@@ -16,11 +16,12 @@
 <i class="fa fa-user-o" aria-hidden="true"></i>
 </a>
 {{/if}}
+
         </div><!-- Login Icon End -->
             <div class="flex-item-right"><!-- Wish List -->
 {{#if settings.show_wishlist}} 
 {{#if customer }}
-{{> components/common/wishlist-dropdown}} 
+{{> components/common/wishlist-dropdown}}
 {{else}}
 <div class="pleaseLogin">
 <a class="navUser-action" href="/login.php"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
@@ -28,14 +29,30 @@
 {{/if}}
 {{/if}}
         </div><!-- End Wishlist -->
+<!---------------- Cart Start----------------------->
+<div class="flex-item-right">
+         <span class="cart-item">
+            <a
+            class="navUser-action"
+            data-cart-preview
+            data-dropdown="cart-preview-dropdown"
+            data-options="align:right"
+            href="{{urls.cart}}">
+            <span class="navUser-item-cartLabel"><!--<i class="fa fa-shopping-cart"></i>-->
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+            <span class="countPill{{#if cart.items}} countPill--positive{{/if}} cart-quantity">{{cart.quantity}}</span>
+            </a>
+        </span>
+</div>
+<!---------------- Cart End ----------------------->
         </div>
         </div>
 <div class="flex-item">
 
    <div class="flex-parent-4">
-    <!--<div class="flex-item">
-<span><a class="navUser-action" href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i></a></span>
-        </div>-->
+    <div class="flex-item">
+<!--<span><a class="navUser-action" href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i></a></span>-->
+        </div>
             <div class="flex-item">
 <div class="search-wrap">{{> components/common/search-box}}</div>
         </div>

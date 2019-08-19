@@ -70,3 +70,19 @@ try {
 
 {{/partial}}
 {{> layout/base}}
+
+<script type="text/javascript">
+if (window.location.pathname == "/cart.php") // Cart page
+    {
+      var cartItems = [];
+      document.querySelectorAll('.gtm-id').forEach(function(items) {
+        cartItems.push(items.innerText.trim());
+      });  
+    }
+dataLayer.push({
+'event': 'fireRemarketingTag',
+'ecomm_prodid': cartItems,
+'ecomm_pagetype': 'cart',
+'ecomm_totalvalue': '{{cart.sub_total.value}}'
+});
+</script>

@@ -1,18 +1,17 @@
 <nav class="navUser1">
     <div class="container flex-nav1">
     {{> components/common/currency-selector}}
-
-        <div class="navUser-item">
-            <span class="flex-item"><a href="tel:18775597516"><strong>877-559-7516</strong></a><!-- Open 7 days--></span>
-        </div>
-        <div class="navUser-item">
-            <span class="flex-item"><a href="/shipping-returns/"><i class="fa fa-truck" data-fa-transform="rotate-180"></i> FREE Shipping</a></span>
-        </div>
-        <div class="navUser-item">
-            <a href="/for-the-trade/">Trade Program</a>
-        </div>
+        <!--<div class="navUser-item">-->
+        <!--    <span class="flex-item"><a href="tel:18775597516"><strong>877-559-7516</strong></a>/span> -->
+        <!--</div>-->
+        <!--<div class="navUser-item">-->
+        <!--    <span class="flex-item"><i class="fa fa-truck" data-fa-transform="rotate-180"></i> FREE Shipping</span>-->
+        <!--</div>-->
+        <!--<div class="navUser-item">-->
+        <!--    <a href="#">Trade Program</a>-->
+        <!--</div>-->
 <!------------------- Moved Cart ----------------------->        
-         <span class="cart-item">
+        <span class="cart-item nav-2">
             <a
             class="navUser-action"
             data-cart-preview
@@ -24,6 +23,18 @@
             <span class="countPill{{#if cart.items}} countPill--positive{{/if}} cart-quantity">{{cart.quantity}}</span>
             </a>
         </span>
+               <li class="navUser-item navUser-item--cart">
+            {{!---<a
+                class="navUser-action"
+                data-cart-preview
+                data-dropdown="cart-preview-dropdown"
+                data-options="align:right"
+                href="{{urls.cart}}">
+                <span class="navUser-item-cartLabel">{{lang 'common.cart'}}</span> <span class="countPill{{#if cart.items}} countPill--positive{{/if}} cart-quantity">{{cart.quantity}}</span>
+            </a>--}}
+
+            <div class="dropdown-menu" id="cart-preview-dropdown" data-dropdown-content aria-hidden="true"></div>
+        </li>
 <!------------------- Moved Cart ----------------------->
         <!--<div class="navUser-item">
             <a href="#">See Beautifully</a>
@@ -69,7 +80,7 @@
                 {{/if}}
             {{/if}}
         </li> --}}
-       {{!--  <li class="navUser-item navUser-item--cart">
+      {{!-- <li class="navUser-item navUser-item--cart">
             <a
                 class="navUser-action"
                 data-cart-preview
@@ -80,7 +91,7 @@
             </a>
 
             <div class="dropdown-menu" id="cart-preview-dropdown" data-dropdown-content aria-hidden="true"></div>
-        </li> --}}
+        </li>--}}
          {{!-- {{#if theme_settings.social_icon_placement_top}} --}}
            {{!--<li class="navUser-item navUser-item--social social-header-links">
                 {{> components/common/social-links}}

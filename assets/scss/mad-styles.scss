@@ -402,7 +402,18 @@ ul .navPage-subMenu-list:after {
 .navUser-action {
     text-transform: capitalize;
     font-weight: 300;
-    padding: 1.3rem .78571rem;
+    padding: 2rem .78571rem;
+}
+
+.loginText {
+  line-hright: 1em;
+padding: 2px 10px 2px 10px;
+font-family: Century Gothic, sans-serif;
+font-size: .7em;
+font-weight: bolder;
+background-color: #FFB947;
+color:#ffffff;
+border-radius: .5em;
 }
 
 .actionBar-section .form-field {
@@ -539,20 +550,21 @@ display: flex;
             flex-direction: row;
             justify-content: flex-end;
             align-items: flex-end;
-            max-height: 1.2rem; 
+            max-height: 1.2rem;
 
                      }
 
     div.flex-parent-3 div.flex-item-left a {
                     font-size: 24px;
                     color:#ffb947;
-                    
+
                     }
 
+
     div.flex-parent-3 div.flex-item-right a {
-                        font-size: 24px;
+                        font-size: 20px;
                         color:#ffb947;
-                        
+
                         }
 
     .flex-parent-4 {
@@ -573,7 +585,7 @@ text-align:right;
 div.flex-parent-4 div.flex-item a {
                                     font-size: 12px;
                                     color:#ffb947;
-                                    
+
                                     }
 
 .flex-parent-5 {
@@ -833,11 +845,11 @@ div.flex-parent-5 div.flex-item-3 span.cart-item{
     padding: 20px 0px;
 }
 .tradesectionone {
-    
+
         width: 50%;
 }
 .tradesectiontwo {
-    
+
         width: 65%;
 }
 .cta {
@@ -1407,8 +1419,8 @@ margin-bottom:20px;
     a {
         text-decoration: none;
         margin-left: 25px;
-    
-     
+
+
     }
 
     img {
@@ -1519,8 +1531,8 @@ form.signup-form button {
 
 .tradeprogram {
  .tradesection {
-  padding:10px;   
- }   
+  padding:10px;
+ }
 }
 
 .group-wrap {
@@ -1528,7 +1540,7 @@ form.signup-form button {
     width: 100%;
     margin: 0 auto;
     @include breakpoint('small'){
-       width: 52%; 
+       width: 52%;
     }
 }
 
@@ -1582,7 +1594,7 @@ form.signup-form button {
   padding: 0;
   margin: 0;
   list-style: none;
-  
+
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1614,6 +1626,6 @@ line-height: 100px;
   margin-left: -25vw;
   margin-right: -25vw;
 @include breakpoint('medium'){
-         width: 75vw;   
+         width: 75vw;
       }
 }

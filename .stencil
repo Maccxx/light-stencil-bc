@@ -1,0 +1,11 @@
+{
+  "normalStoreUrl": "https://www.lightopiaonline.com",
+  "accessToken": "cjqx9q50290rj727vuubkrjhrm1gsc4",
+  "port": "3000",
+  "customLayouts": {
+    "brand": {},
+    "category": {},
+    "page": {},
+    "product": {}
+  }
+}

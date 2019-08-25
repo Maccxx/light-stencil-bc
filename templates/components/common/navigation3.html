@@ -9,17 +9,17 @@
     <div class="flex-item-right"><!-- Login Icon -->
 {{#if customer }}
 <a class="navUser-action" href="/login.php">
-<i class="fa fa-sign-out" aria-hidden="true"></i>
+<span class="loginText" aria-hidden="true">Logout</span>
 </a>
 {{else}}
 <a class="navUser-action" href="/login.php">
-<i class="fa fa-user-o" aria-hidden="true"></i>
+<span class="loginText" aria-hidden="true">Login</span>
 </a>
 {{/if}}
 
         </div><!-- Login Icon End -->
             <div class="flex-item-right"><!-- Wish List -->
-{{#if settings.show_wishlist}} 
+{{#if settings.show_wishlist}}
 {{#if customer }}
 {{> components/common/wishlist-dropdown}}
 {{else}}
@@ -57,9 +57,9 @@
 <div class="search-wrap">{{> components/common/search-box}}</div>
         </div>
     </div>
-   {{!-- {{#if settings.show_wishlist}} 
+   {{!-- {{#if settings.show_wishlist}}
             {{#if customer }}
-                {{> components/common/wishlist-dropdown}} 
+                {{> components/common/wishlist-dropdown}}
             {{else}}
                 <div class="pleaseLogin">
                     <a class="navUser-action" href="/login.php"><i class="fa fa-heart-o" aria-hidden="true"></i></a>

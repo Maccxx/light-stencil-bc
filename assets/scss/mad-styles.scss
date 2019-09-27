@@ -800,7 +800,7 @@ div.flex-parent-5 div.flex-item-3 span.cart-item{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(https://cdn11.bigcommerce.com/s-b03g7jlut8/product_images/uploaded_images/heronew3.jpg) bottom no-repeat;
+    background: url(https://cdn11.bigcommerce.com/s-b03g7jlut8/product_images/uploaded_images/heronew8.jpg) bottom no-repeat;
     height: 500px;
 
     h1 {
@@ -1640,4 +1640,184 @@ line-height: 100px;
 @include breakpoint('medium'){
          width: 75vw;
       }
+}
+
+/*-------------------------------------------- Custom Location Pages ------------------------------------*/
+.santa-monica-banner {
+    background: url('https://cdn11.bigcommerce.com/s-b03g7jlut8/product_images/uploaded_images/santamonica-hero.jpg') center top no-repeat;
+}
+
+.santa-monica-banner h1{
+color:#fff;
+text-align: center;
+padding-top: 100px;
+padding-bottom: 80px;
+font-size:2rem;
+@include breakpoint('small'){
+    padding-top: 200px;
+    padding-bottom: 150px;
+    font-size:3rem;
+     }
+}
+
+.manhattan-banner {
+    background: url('https://cdn11.bigcommerce.com/s-b03g7jlut8/product_images/uploaded_images/manhattanbeach-hero.jpg') center top no-repeat;
+}
+
+.manhattan-banner h1{
+color:#fff;
+text-align: center;
+padding-top: 100px;
+padding-bottom: 80px;
+font-size:2rem;
+@include breakpoint('small'){
+    padding-top: 200px;
+    padding-bottom: 150px;
+    font-size:3rem;
+     }
+}
+
+.costa-mesa-banner {
+    background: url('https://cdn11.bigcommerce.com/s-b03g7jlut8/product_images/uploaded_images/costamesa-hero.jpg') center top no-repeat;
+}
+
+.costa-mesa-banner h1{
+color:#fff;
+text-align: center;
+padding-top: 100px;
+padding-bottom: 80px;
+font-size:2rem;
+@include breakpoint('small'){
+    padding-top: 200px;
+    padding-bottom: 150px;
+    font-size:3rem;
+     }
+}
+/*---------------------------------------- End Page Banners --------------------------------------*/
+.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+
+
+  .location-pic img {
+    margin-bottom: -80px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+@include breakpoint('medium'){
+    margin-bottom: -120px;
+    margin-left: 35%;
+    margin-right: 35%;
+    width: 30%;
+     }
+    }
+
+      .location-content {
+         margin-top:120px; 
+      }
+
+/*---------------------------------- Location Content -----------------------------------*/
+.location-head {
+    width: 100%;
+    background: #ffb947;
+    padding: 15px;
+    text-align: center;
+}
+
+.location-head h2{
+    margin-top: 0;
+    margin-bottom:0;
+    color: #fff;
+    font-weight: 600;
+}
+
+/*------------------------------------------- Location Hours ------------------------------*/
+.location-address-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    @include breakpoint('small'){
+        grid-template-columns: auto auto auto;
+    }
+  }
+
+.location-address-grid h3 {
+  font-weight: 600;
+  }
+
+.location-address-grid p {
+    margin-bottom: 0.2rem;
+    }
+
+.location-map-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-bottom: 25px;
+        grid-column-gap: 20px;
+@include breakpoint('small'){
+    grid-template-columns: 40% 60%;
+        }
+      }
+
+/*---.location-map {
+    border: solid 1px #999;
+}  ---*/   
+
+.location-map-info {
+        /*----margin-left: 20px;----*/
+      }
+
+.location-phone {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 100%;
+    margin-bottom: 25px;
+    text-decoration:none;
+      }   
+      
+.location-phone a{
+    text-decoration:none;
+}
+
+.location-btn {
+    width: 70%;
+    color: #fff;
+    background: #ffb947;
+    border-radius: 30px;
+    padding: 15px 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+@include breakpoint('small'){
+    width: 40%;
+    }
+      }
+
+.location-page-content {
+    margin-top:15px;
+      }
+
+.content-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 20px 20px;
+@include breakpoint('small'){
+            grid-template-columns: 30% 70%;
+        }
+      }
+
+.content-grid-item {
+    margin: 10px 20px;
+}
+
+.content-grid-item h3 {
+    margin-top: 0.3rem;
 }

@@ -39,3 +39,14 @@
 {{else}}
 <a class="navPages-action" href="{{url}}">{{name}}</a>
 {{/if}}
+
+<script>
+    function changeLink(){
+        var isiPad = navigator.userAgent.match(/iPad/i) == null;
+
+if(isiPad){
+            var link = document.getElementsByClassName("has-subMenu");
+link[0].setAttribute('href', "#");
+} 
+changeLink();
+</script>

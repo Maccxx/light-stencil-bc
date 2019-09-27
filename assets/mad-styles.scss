@@ -7,8 +7,120 @@ h5,
 h6,
 .button,
 body {
-    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif !important;
+    /*font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif !important;*/
+/* ------------ Futura  Font ---------------------*/
+font-family: futura-pt, sans-serif;
+/*--- font-weight: 700;
+font-style: normal;
+font-family: futura-pt, sans-serif;
+font-weight: 700;
+font-style: italic;
+font-family: futura-pt, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-family: futura-pt, sans-serif;
+font-weight: 400;
+font-style: italic;
+font-family: futura-pt-bold, sans-serif;
+font-weight: 700;
+font-style: normal;
+font-family: futura-pt-bold, sans-serif;
+font-weight: 700;
+font-style: italic;
 
+font-family: futura-pt-condensed, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: futura-pt-condensed, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+font-family: futura-pt-condensed, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+font-family: futura-pt-condensed, sans-serif;
+font-weight: 700;
+font-style: italic; ----*/
+
+
+}
+
+/*------------------------------------------------------------- Sales Page ----------------------------------------------------------------------*/
+
+.sale-flex-container {
+
+  display: flex;
+ justify-content: center;
+  flex-flow: row wrap;
+  background-color: none;
+
+}
+
+.sale-flex-container > div {
+  flex-wrap: wrap;
+  background-color: #ffffff;
+border: 1px solid #cccccc;
+  border-radius:25px;
+  width: 30em;
+  padding: 30px 30px 0 30px;
+  margin: 10px;
+  justify-content: flex-start;
+  font: .7em Century Gothic, sans-serif;
+
+}
+
+
+h4.sale-header {
+color: #f26522;
+  width: 100%;
+display: block;
+text-align:left;
+  font-size: 2em;
+font-weight: 200;
+margin: -.5em 0 1.3em 0;
+border-bottom: 1px solid #cccccc;
+}
+
+.saleDescription {
+color: #777777;
+margin-top:-15px;
+width: 65%;
+line-height:1.2em;
+font-size:1.3em;
+clear:right;
+
+}
+
+img.saleImage {
+  float: right;
+  margin: -30px -20px 0 0;
+  vertical-align:middle;
+  width: 35%;
+position:relative;
+left: 0px;
+  top: -30px;
+border: 1px solid #ffffff;
+}
+
+.shopNow a {
+color: #FFB947;
+
+text-decoration:none;
+font-size:1.3em;
+position:relative;
+left: 0px;
+top: 1.5em;
+}
+
+.shopNow a:hover {
+color: #f26522;
+}
+    /* ------------ End Sale Page Style ---------------------*/
+
+.orange-title {
+    color: #ffb416 ;
 }
 
 body {
@@ -18,10 +130,45 @@ body {
 .body {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif !important;
+    /*---------font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif !important; -----*/
+    /* ------------ Futura  Font ---------------------*/
+font-family: futura-pt, sans-serif;
+/*--- font-weight: 700;
+font-style: normal;
+font-family: futura-pt, sans-serif;
+font-weight: 700;
+font-style: italic;
+font-family: futura-pt, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-family: futura-pt, sans-serif;
+font-weight: 400;
+font-style: italic;
+font-family: futura-pt-bold, sans-serif;
+font-weight: 700;
+font-style: normal;
+font-family: futura-pt-bold, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+font-family: futura-pt-condensed, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: futura-pt-condensed, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+font-family: futura-pt-condensed, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+font-family: futura-pt-condensed, sans-serif;
+font-weight: 700;
+font-style: italic; ----*/
 
     p {
-        font-size: 14px !important;
+        font-size: 1p6x !important;
         font-weight: 300;
     }
 
@@ -29,7 +176,7 @@ body {
         font-size: 65%;
 
         p {
-            font-size: 14px !important;
+            font-size: 16px !important;
         }
     }
 
@@ -37,7 +184,7 @@ body {
         font-size: 75%;
 
         p {
-            font-size: 14px !important;
+            font-size: 16px !important;
         }
     }
 
@@ -45,7 +192,7 @@ body {
         font-size: 100%;
 
         p {
-            font-size: 14px !important;
+            font-size: 16px !important;
         }
     }
 }
@@ -72,6 +219,10 @@ strong {
     a[href*='sale'] {
         color: red;
     }
+}
+
+div.top-wrap div.navUser-item {
+    margin-right: 20px;
 }
 
 #navHere>li:nth-child(8),
@@ -224,7 +375,7 @@ li.navPages-item a.navPages-action {
         position: relative;
     }
 
-    @include breakpoint('large') {
+    @include breakpoint('medium') {
         display: block;
     }
 }
@@ -323,6 +474,18 @@ ul .navPage-subMenu-list:after {
 .navUser-action {
     text-transform: capitalize;
     font-weight: 300;
+    padding: 2rem .78571rem;
+}
+
+.loginText {
+  line-height: 1em;
+padding: 2px 10px 2px 10px;
+font-family: Century Gothic, sans-serif;
+font-size: .7em;
+font-weight: bolder;
+background-color: #FFB947;
+color:#ffffff;
+border-radius: .5em;
 }
 
 .actionBar-section .form-field {
@@ -350,7 +513,7 @@ ul .navPage-subMenu-list:after {
 }
 
 .navPages-action {
-    font-size: 13px !important;
+    font-size: 15px !important;
 }
 
 .navPages .navPage-subMenu-list {
@@ -410,7 +573,18 @@ ul .navPage-subMenu-list:after {
     width: auto;
     margin: 0;
 }
+
+input.form-prefixPostfix-button--postfix {
+    padding: .85714rem 3rem;
+}
+
 /*-------------------------------- Logo Area -------------------------------------*/
+.cart-item.nav-2 {
+    @include breakpoint('large') {
+        display:none;
+}
+}
+
 .cart-item {
     border-bottom: 0px solid #fff;
 }
@@ -446,23 +620,21 @@ display: flex;
     .flex-parent-3 {
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: flex-end;
+            max-height: 1.2rem;
 
                      }
 
-    div.flex-parent-3 div.flex-item {
-        /*--flex-basis: 50%;--*/
-
-                    }
     div.flex-parent-3 div.flex-item-left a {
                     font-size: 24px;
                     color:#ffb947;
 
                     }
 
+
     div.flex-parent-3 div.flex-item-right a {
-                        font-size: 24px;
+                        font-size: 20px;
                         color:#ffb947;
 
                         }
@@ -501,7 +673,7 @@ div.flex-parent-4 div.flex-item a {
                         }
                         }
 
-div.flex-parent-5 div.flex-item-3,div.flex-parent-5 div.flex-item-2,{
+div.flex-parent-5 div.flex-item-3,div.flex-parent-5 div.flex-item-2{
 width:45%;
                         }
 
@@ -510,9 +682,14 @@ text-align:right;
                         }
 
 div.flex-parent-5 div.flex-item-3 span.cart-item{
+
                             padding-left:0px;
                             padding-top:0px;
                             padding-bottom:0px;
+
+@include breakpoint('medium') {
+                                display: none;
+                                                    }
                                                     }
 
 .nav-wrap {
@@ -547,9 +724,7 @@ div.flex-parent-5 div.flex-item-3 span.cart-item{
     font-size: 24px;
 }
 
-.chat-icon {}
 
-.pleaseLogin {}
 
 .navUser,
 .footer-banner {
@@ -602,7 +777,7 @@ div.flex-parent-5 div.flex-item-3 span.cart-item{
 
 .navUser1 {
    /* flex-direction:row; */
-    height: 40px;
+    height: 20px;
     -ms-flex-pack: end;
     justify-content: flex-end;
     align-items: right;
@@ -668,6 +843,9 @@ div.flex-parent-5 div.flex-item-3 span.cart-item{
     float: right !important;
     flex-direction:row-reverse;
     width:100%;
+    @include breakpoint('medium'){
+        width: unset;
+    }
 }
 
 .social-links.clearfix {
@@ -682,7 +860,7 @@ div.flex-parent-5 div.flex-item-3 span.cart-item{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(https://cdn11.bigcommerce.com/s-b03g7jlut8/product_images/uploaded_images/heronew2.jpg?t=1553782521) bottom no-repeat;
+    background: url(https://cdn11.bigcommerce.com/s-b03g7jlut8/product_images/uploaded_images/heronew3.jpg) bottom no-repeat;
     height: 500px;
 
     h1 {
@@ -756,11 +934,18 @@ div.flex-parent-5 div.flex-item-3 span.cart-item{
         position: absolute;
         left: 0;
         right: 0;
-        color: #fff;
+        color: #666;
         text-transform: uppercase;
-        font-size: 25px;
+        font-size:18px;
+        text-shadow: #fff 2px 0 2px;
         z-index: 5;
-        /*font-family: stencilFontFamily("raleway-font");*/
+        bottom:25%;
+        background: rgba(248, 247, 247, 0.2);
+    }
+
+    span:hover {
+        background: rgba(248, 247, 247, 0.7)
+
     }
 
     img {
@@ -836,6 +1021,8 @@ div.flex-parent-5 div.flex-item-3 span.cart-item{
     }
 }
 
+
+
 .top-ctas {
     padding: 25px;
 }
@@ -881,6 +1068,12 @@ div.flex-parent-5 div.flex-item-3 span.cart-item{
         }
     }
 }
+
+/* ------------------------------ Hidding top Cta's ------------------------------*/
+.top-ctas {
+    display:none;
+}
+/* ------------------------------ Hidding top Cta's ------------------------------*/
 
 .bottom-ctas {
     background-color: #ffca8e;
@@ -1270,8 +1463,8 @@ margin-bottom:20px;
 .footer-info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+   /* justify-content: space-around;*/
+    align-items: left;
     margin-bottom: 20px;
 
     .footer-logo img {
@@ -1281,6 +1474,34 @@ margin-bottom:20px;
     a {
         text-decoration: none;
     }
+}
+
+.footer-info-3 {
+    display: flex;
+    flex-wrap: wrap;
+  /*  justify-content: space-around; */
+    align-items: right;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+
+    .footer-logo img {
+        width: 215px;
+    }
+
+    a {
+        text-decoration: none;
+        margin-left: 25px;
+
+
+    }
+
+    img {
+        max-height:25px;
+    }
+}
+
+.footer-info-col {
+    text-align: center;
 }
 
 /*---  Email Signup ----*/
@@ -1384,4 +1605,100 @@ form.signup-form button {
  .tradesection {
   padding:10px;
  }
+}
+
+.group-wrap {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    @include breakpoint('small'){
+       width: 52%;
+    }
+}
+
+.text-wrap {
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    left: 0;
+    @include breakpoint('medium'){
+        bottom: 30px;
+        right: 30px;
+        left: unset;
+    }
+    h2 {
+        text-transform: capitalize;
+        color: white;
+        font-size: 35px;
+        text-shadow: 1px 1px 8px #000000
+    }
+    .button {
+        color: white;
+        text-transform: capitalize;
+        font-size: 20px;
+        border-color: #feb417;
+            &:hover {
+            color: #feb417;
+            border-color: white;
+            background: white;
+            }
+    }
+
+}
+
+
+/*------------------------------------------------------------- Responsive  Video ----------------------------------------------------------------------*/
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/*----------------------------------------------- Shop Category Page Flex Box ---------------------------------------------------------*/
+.flex-categories {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.flex-cat-item {
+  background: #fff;
+  padding: 5px;
+  width: 220px;
+  /*height: 150px;*/
+  margin-bottom: 40px;
+line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 25%;
+  right: 25%;
+  margin-left: -25vw;
+  margin-right: -25vw;
+@include breakpoint('medium'){
+         width: 75vw;
+      }
 }
